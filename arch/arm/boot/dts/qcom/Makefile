@@ -174,6 +174,10 @@ dtb-$(CONFIG_ARCH_SDX20) += sdx20-emmc-cdp.dtb \
 	sdx20-v2-nand-pcie-ep-mtp.dtb
 
 ifeq ($(CONFIG_MACH_XIAOMI_MSM8937),y)
+ifneq ($(CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE),y)
+# Non treble dtb
+dtb-$(CONFIG_MACH_XIAOMI_LAND) += msm8937-pmi8950-qrd-sku1-nt.dtb
+endif
 dtb-$(CONFIG_MACH_XIAOMI_LAND) += msm8937-pmi8950-qrd-sku1.dtb
 else
 dtb-$(CONFIG_ARCH_MSM8937) += msm8937-rumi.dtb \
