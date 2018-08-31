@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/rupansh/chimera_land/branches/lineage-15-1/badge.svg)](https://semaphoreci.com/rupansh/chimera_land)
+
         Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
